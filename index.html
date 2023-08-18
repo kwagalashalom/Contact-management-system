@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <main class="main-app">
+      <div class="upper-section">
+        <h1 class="title">My Contacts</h1>
+        <div class="controls">
+          <input type="number" name="phone-input" class="phone-input" id="phoneInput"
+            placeholder="type contact here...">
+          <button class="add-button buttons" id="addButton">Add Contact ➕</button>
+          <button class="search-button buttons" id="searchButton">search 🔍</button>
+        </div>
+      </div>
+      <!-- The Bottom Section -->
+      <div class="bottom-section">
+        <!-- Contact Row Starts -->
+        <!-- <div class="contact-row">
+          <div class="user-info">
+            <h3 id="userName" class="username">Shalom Kellen</h3>
+            <h3 id="phoneNumber" class="phone-number">07042347899</h3>
+          </div>
+          <div class="buttons-group">
+            <button id="callButton" class="call-button contact-buttons buttons">Call</button>
+            <button id="editButton" class="edit-button contact-buttons buttons">Edit</button>
+            <button id="deleteButton" class="delete-button contact-buttons buttons">Delete</button>
+          </div>
+        </div> -->
+        <!-- Contact Row Ends -->
+      </div>
+      <!-- The Popup Modal -->
+      <div class="modal">
+        <div class="modal-content">
+          <h3 class="modal-title">some title</h3>
+          <div class="modal-body">some content, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit,
+            doloremque.</div>
+          <div class="modal-buttons">
+            <button id="modalSubmitButton" class="modal-submit-button buttons">Submit</button>
+            <button id="modalCancelButton" class="modal-close-button buttons">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

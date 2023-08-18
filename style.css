@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* 1rem = 16px */
+/* Gradient ICE got from https://hypercolor.dev/ */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 228, 230),
+    rgb(204, 251, 241)
+  );
+  padding: 1rem;
+}
+
+/* Box Shadow got from: https://getcssscan.com/css-box-shadow-examples */
+.main-app {
+  width: 40%;
+  height: 90%;
+  position: relative;
+  border-radius: 12px;
+  background: white;
+  margin-bottom: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.upper-section {
+  width: 100%;
+  height: 25%;
+  color: white;
+  background: blue;
+  padding-top: 1rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.bottom-section {
+  height: 70%;
+  width: 100%;
+  /* padding: 1rem; */
+}
+
+.contact-row {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+
+.buttons-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.user-info {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  color: rgb(34, 33, 33);
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.phone-input {
+  width: 35%;
+  padding-inline: 1rem;
+  padding-block: 0.75rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.buttons {
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.buttons:hover {
+  background: #d6e1f5;
+}
+
+.phone-input,
+.buttons {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-button {
+  color: blue;
+}
+.search-button {
+  color: blue;
+}
+
+.call-button {
+  background: blue;
+  color: white;
+}
+.call-button:hover {
+  color: blue;
+  background: white;
+}
+.edit-button {
+  background: green;
+  color: white;
+}
+.edit-button:hover {
+  color: green;
+  background: white;
+}
+.delete-button {
+  background: red;
+  color: white;
+}
+.delete-button:hover {
+  color: red;
+  background: white;
+}
+
+.alert {
+  margin: 1rem;
+}
+
+/* The Modal Styles */
+.modal {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none; /* grid otherwise */
+  place-items: center;
+  position: absolute;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.modal-content {
+  width: 50%;
+  padding: 1rem;
+  border-radius: 12px;
+  background: white;
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 2px solid #ccc;
+  padding-block: 5px;
+}
+
+.modal-body,
+.modal-buttons {
+  text-align: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-form {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-input {
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+/* Disables input arrows: https://stackoverflow.com/questions/17164278/disable-writing-in-input-type-number-html5 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
